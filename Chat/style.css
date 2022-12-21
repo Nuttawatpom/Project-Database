@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: ekkamai new;
+    font-weight: bold;
+    background-color: #5CC4FF;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: ekkamai new;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+
+}
+
+.box{
+    margin-top: -12.2%;
+}
+.insidebox {
+
+    width: 25%;
+    height: 400px;
+    background-color: green;
+    color: green;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
+
+}
+.social-call{
+    height: 40px;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #5CC4FF;
+    border-color: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+.social a{
+    color: rgba(0,0,0,0.7);
+    font-size: 0.9rem;
+
+}
+.contact{
+    color: rgba(0,0,0,0.7);
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+.social a:hover{
+    color: #5fffe7;
+    transition: all ease 0.3s;
+    
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 45px;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    position: relative;
+    width: 100%;
+
+    height: 100px;
+}
+.logo{
+    display: flex;
+    padding-top: 8px;
+}
+.navigation input{
+    background-color: #fff;
+    margin-left: 10%;
+    width: 500px;
+    height: 30px;
+    padding: 0px 20px 0px 10px;
+    font-family: ekkamai new;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.navigation a{
+    margin-left: 10px;
+}
+.menu{
+    display: flex;
+    font-size: 20px;
+    font-family: ekkamai new;
+    margin-right: 33.5px;
+}
+.menu li{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+.menu li a{
+    color: #000000;
+    transition: 0.5s;
+    
+}
+.right-menu a{
+    margin: 0px 5px 0px 0px;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.7);
+    transition: 0.5s;
+}
+.menu a:hover,
+.right-menu a:hover,
+.search-cancel:hover{
+    color: #5fffe7;
+    transition: 0.5s;
+}
+@keyframes example{
+    0%  {background-color: red;}
+    20% {background-color: orange;}
+    40%  {background-color: yellow;}
+    60% {background-color: green;}
+    80% {background-color: blue;}
+    
+}
+.sale-lable{
+    width: 38px;
+    height: 17px;
+    background-color: black;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.fa-shopping-cart{
+    position: relative;
+}
+.fa-envelope{
+    position: relative;
+}
+.num-cart-product{
+    position: absolute;
+    top: -17px;
+    right: -17px;
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #5fffe7;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.search-bar{
+    width: 100%;
+    height: 300px;
+    background-color: #ffff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px -5px 30px rgba(0,0,0,0.1);
+    z-index: 101;
+}
+.search-input{
+    background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 500px;
+    height: 100px;
+}
+.search-bar input{
+    width: 100%;
+    padding: 30px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    margin: 20px;
+    padding: 0px 20px;
+}
+.search-cancel{
+    color: #272727;
+    font-size: 2rem;
+    padding-right: 40px;
+}
+
+.search-bar-active{
+    display: flex
+}
+@keyframes search {
+    0%{
+        bottom:-300px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+.dropdown{
+    position: relative;
+    display: inline;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: bottom;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+
+
+.container {
+    background-color: #fff;
+    box-shadow: 2px 2px 30px rgba(84, 192, 241, 0.863);
+    position: relative;
+    overflow: hidden;
+    width: 1080px;
+    max-width: 100%;
+    min-height: 880px;
+    max-height: 1200px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 65px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.container:hover{
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+.text-reg{
+    font-size: 30px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: ekkamai new;
+}
+.text-reg strong{
+    color: #5CC4FF;
+    background-color: transparent;
+    padding: 5px 30px;
+    font-family: ekkamai new;
+}
+.text-reg p1{
+    margin-top: 50px;
+    font-size: 0.95rem;
+    font-family: ekkamai new;
+}
+.form-container{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Boxchoosing{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.Boxchoosing p{
+    margin-left: 100px;
+}
+.box-reg{
+    margin: auto;
+    flex-direction: column;
+    font-family: ekkamai new;
+}
+.register-detail p2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    font-family: ekkamai new;
+}
+.btn-choose {
+    width: 140px;
+    background: #5CC4FF;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 14px;
+    margin-left: 210px;
+    cursor: pointer;
+}
+.btn-choose:hover{
+    box-shadow: 2px 2px 30px rgba(84, 192, 241, 0.863);
+}
+
+.box-reg textarea{
+    width: 100%;
+    transition: 0.5s;
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px 10px ;
+    border: 2px solid;
+    border-color: #5CC4FF;
+    background-color: #fff;
+    font-weight: 500;
+    height: 120px;
+    overflow-wrap: break-word;
+    resize: none;
+    font-family: ekkamai new;
+}
+
+.register-detail input{
+    transition: 0.5s;
+    width: 70%;
+    margin-top: 18px;
+    padding: 10px 10px ;
+    border: 2px solid;
+    border-color: #5CC4FF;
+    background-color: #fff;
+    font-weight: 500;
+    height: 50px;
+    font-family: ekkamai new;
+}
+
+.register-detail input[type="text"]:hover ,.register-detail input[type="email"]:hover{
+    border-color: #4ad54c;
+}
+
+.box-reg textarea[type="text"]:hover ,.box-reg textarea input[type="email"]:hover{
+    border-color: #4ad54c;
+}
+
+#textBox{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    padding: 10px;
+}
+#prevText{
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+    width: 90%;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 2px 2px 20px #000;
+}
+
+.register-detail{
+    width: 100%;
+}
+
+.submit-btn{
+    width: 140px;
+    border-color: transparent;
+    background: #5CC4FF;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    box-shadow: 2px 2px 30px #5CC4FF;
+}
+
+
+.select-box {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin-left: -2px;
+  }
+  
+  .select-box .options-container {
+    background: #fff;
+    color: #26a0e7;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 80px;
+    order: 1;
+  }
+  
+  .selected {
+    background: #5cc4ff;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    color: #fff;
+    position: relative;
+    left: 83px;
+    order: 0;
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("img/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+    margin-left: 80px;
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    margin-left: 80px;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #c9daf5;
+    border-radius: 0 8px 8px 0;
+    display: none;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+    display: none;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: rgb(241, 239, 239);
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .radio {
+    display: none;
+  }
